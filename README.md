@@ -6,6 +6,9 @@
 
 # RUN for Development 
 
-Run `$ while inotifywait -e modify pkg/dbuser/*; do touch cmd/main.go; done` in a terminal
+`$ docker-compose up`
+`$ while inotifywait -e modify pkg/dbuser/*; do touch cmd/main.go; done`
 
-In other terminal run `$GOPATH/bin/gin --path cmd --port 3000`
+In other terminal run
+
+`$GOPATH/bin/gin --path cmd --port 3000`
